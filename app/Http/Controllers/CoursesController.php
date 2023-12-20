@@ -57,6 +57,7 @@ class CoursesController extends Controller
             'creator_user_id' => $request->input('creator_user_id')
         ]);
 
+
         if ($courses){
             return response()->json([
                 'success' => true,

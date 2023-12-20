@@ -18,8 +18,6 @@ return new class extends Migration
             $table->string('author');
             $table->integer('course_id');
             $table->integer('creator_user_id');
-
-            $table->timestamps();
         });
     }
 
