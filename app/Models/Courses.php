@@ -11,7 +11,7 @@ class Courses extends Model
 
         public $timestamps = false;
 
-    protected $table = 'courses';
+    protected $table = 'course';
 
     protected $primaryKey = 'code';
 

@@ -11,59 +11,9 @@ class Syllabus extends Model
 
     public $timestamps = false;
 
-    protected $table = 'syllabus';
+    protected $table = 'syllabi';
 
     protected $fillable = [
         'title', 'head_of_study_program', 'author', 'course_id', 'creator_user_id'
     ];
-
-    // public function studyProgram()
-    // {
-    //     return $this->belongsTo(Course::class, 'course_id');
-    // }
-
-    // public function intendedLearningOutcomes()
-    // {
-    //     return $this->hasMany(IntendedLearningOutcome::class, 'syllabus_id');
-    // }
-
-    // public function courseLearningOutcomes()
-    // {
-    //     return $this->hasMany(CourseLearningOutcome::class, 'syllabus_id');
-    // }
-
-    // public function lessonLearningOutcomes()
-    // {
-    //     return $this->hasMany(LessonLearningOutcome::class, 'syllabus_id');
-    // }
-
-    // public function ilos()
-    // {
-    //     return $this->intendedLearningOutcomes();
-    // }
-
-    // public function clos()
-    // {
-    //     return $this->courseLearningOutcomes();
-    // }
-
-    // public function llos()
-    // {
-    //     return $this->lessonLearningOutcomes();
-    // }
-
-    // public function assignmentPlans()
-    // {
-    //     return $this->hasMany(AssignmentPlan::class, 'syllabus_id');
-    // }
-
-    // public function learningPlans()
-    // {
-    //     return $this->hasMany(LearningPlan::class);
-    // }
-
-    // public function course()
-    // {
-    //     return $this->belongsTo(Course::class);
-    // }
 }
